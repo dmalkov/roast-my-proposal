@@ -91,7 +91,7 @@ export default function RoastResults({ result, onReset }: RoastResultsProps) {
                   <div>
                     <p className="text-sm font-semibold text-panda-text/70 mb-2">Examples from your proposal:</p>
                     <div className="space-y-2">
-                      {dimension.examples.map((example, idx) => (
+                      {dimension.examples.map((example: string, idx: number) => (
                         <p key={idx} className="text-sm text-panda-text italic bg-white p-3 rounded border-l-4 border-panda-green">
                           "{example}"
                         </p>
