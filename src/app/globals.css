@@ -1,0 +1,63 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,500;0,600;0,700;1,500&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --panda-green: #248567;
+  --panda-purple: #D6CEFF;
+  --panda-text: #242424;
+  --panda-bg: #EEE9E1;
+  --panda-error: #C44536;
+  --panda-warning: #E9B44C;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  background-color: var(--panda-bg);
+  color: var(--panda-text);
+}
+
+/* Gradient animation for processing state */
+.gradient-animate {
+  background: linear-gradient(270deg, var(--panda-purple), var(--panda-green), var(--panda-purple));
+  background-size: 200% 200%;
+  animation: gradient-shift 2s ease infinite;
+}
+
+@keyframes gradient-shift {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+/* Score bar animation */
+@keyframes score-fill {
+  from { width: 0%; }
+  to { width: var(--score-width); }
+}
+
+.score-bar {
+  animation: score-fill 1s ease-out forwards;
+}
+
+/* Staggered reveal for roast items */
+@keyframes fade-in-up {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.fade-in-up {
+  animation: fade-in-up 0.5s ease-out forwards;
+}
+
+.fade-in-up:nth-child(1) { animation-delay: 0.1s; }
+.fade-in-up:nth-child(2) { animation-delay: 0.2s; }
+.fade-in-up:nth-child(3) { animation-delay: 0.3s; }
