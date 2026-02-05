@@ -74,7 +74,7 @@ export default function Home() {
 
         {/* Footer */}
         <footer className="mt-16 text-center text-panda-text/50 text-sm">
-          <p>Built for April Fools. Accidentally useful.</p>
+          <p>Built for Laughs. Accidentally useful.</p>
           <p className="mt-1">
             Powered by{' '}
             <a

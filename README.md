@@ -79,4 +79,4 @@ Remember to add `ANTHROPIC_API_KEY` to your Vercel environment variables.
 
 ---
 
-*Built for April Fools. Accidentally useful.*
+*Built for Laughs. Accidentally useful.*
